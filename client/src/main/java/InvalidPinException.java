@@ -8,6 +8,5 @@ public class InvalidPinException extends Exception{
         System.out.println(s+"Введен неверный PIN" );
     }
     InvalidPinException(){
-        new InvalidPinException("");
     }
 }

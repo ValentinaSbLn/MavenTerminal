@@ -4,13 +4,13 @@ import java.util.Scanner;
  * Created by Valentina on 08.10.2016.
  */
 
-import java.util.Scanner;
-
 /**
  * Created by Valentina on 08.10.2016.
  */
 public class TermUsr {
 
+    // TODO Здесь член класса server должен быть интерфейсом, значение должно передаваться в конструкторе.
+    // Написание теста для класса вынудит изменить его дизайн в лучшую сторону.
     private TerminalServerImpl server = new TerminalServerImpl();
 
     private int numAccount;

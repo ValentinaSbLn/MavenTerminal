@@ -8,6 +8,10 @@ public class TerminalInterface {
 
     public static void main(String[] args) {
 
+        // TODO Метод стоит поделить на отдельные логические части.
+        // В данном виде в нём присутствует смешивание различных действий. На 1 метод 1 логическое действие.
+        // Ошибка в дизайне метода привела к необходимости множественого написания System.exit();
+
         System.out.println("Для начала работы с термналом необходимо ввести номер счета и пин код");
         TermUsr trm = new TermUsr();
 
@@ -29,6 +33,11 @@ public class TerminalInterface {
         String select = "n";
         do {
             System.out.println("\nВыберите действие:\n0- Выход \n1- Запрос баланса \n2- Пополнить баланс \n3- Снять наличные ");
+
+            // TODO Есть такой паттерн - command. Он бы здесь очень подошёл.
+            // С ним бы не пришлось иметь проблемы, например, со случаем выхода из системы (ввод 0).
+            // + в таком виде выход из системы делать не совсем красиво.
+            // Можно, например, сделать labeled loop (https://docs.oracle.com/javase/tutorial/java/nutsandbolts/branch.html)
             Scanner in = new Scanner(System.in);
             select = in.nextLine();
             switch (select) {

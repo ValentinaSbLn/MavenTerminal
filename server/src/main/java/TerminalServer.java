@@ -7,7 +7,7 @@ public interface TerminalServer {
      * Метод возвращает PIN пользователя
      * @return PIN
      */
-    public char [] getPin(int num);
+    public char [] getPin(int num); // У интерфейса все методы по умолчанию публичные, поэтому public писать не нужно
     /**
      * Метод возвращает количество денег на счету пользователя
      * @param num - принимает номер счета

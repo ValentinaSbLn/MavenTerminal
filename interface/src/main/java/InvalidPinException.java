@@ -12,6 +12,5 @@ public class InvalidPinException extends Exception {
     }
 
     InvalidPinException() {
-        new InvalidPinException("");
     }
 }

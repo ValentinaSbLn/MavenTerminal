@@ -13,7 +13,6 @@ public class TerminalServerImpl implements TerminalServer {
     }
 
     public TerminalServerImpl() {
-
         accounts = Arrays.asList(new Account(1111, "1111".toCharArray(), 100.0), new Account(2222, "2222".toCharArray(), 1000.0), new Account(3333, "3333".toCharArray(), 2000.0));
         this.countConnect = 1;
     }
